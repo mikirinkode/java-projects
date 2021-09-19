@@ -56,8 +56,44 @@ class Toko {
     public void setListSymbian(ArrayList<Symbian> listSymbian) {
         this.listSymbian = listSymbian;
     }
+
+    public void spesifikasi(int choiceNumber){
+        int listNumber = choiceNumber -1;
+        String phoneBrand =listHandphone.get(listNumber).getBrand();
+        String phoneModel = listHandphone.get(listNumber).getModel();
+        String phoneType = listHandphone.get(listNumber).getPhoneType();
+        System.out.println("\nMenampilkan spesifikasi " + phoneBrand + " " + phoneModel);
+        // checking type of handphone
+        if(phoneType == "SMARTPHONE"){
+            for(Smartphone phone: listSmartphone){
+                if(phoneModel == phone.getModel()){
+                    System.out.println("Nama Brand \t: " + phone.getBrand());
+                    System.out.println("Model HP \t: " + phone.getModel());
+                    System.out.println("Sistem Operasi \t: " + phone.getOs());
+                    System.out.println("Kamera Depan \t: " + phone.getFrontCameraSpecs());
+                    System.out.println("USB TYPE \t: " + phone.getUsbType());
+                }
+            }
+        } else if(phoneType == "SYMBIAN"){
+            for(Symbian phone: listSymbian){
+                if(phoneModel == phone.getModel()){
+                    System.out.println("Nama Brand \t: " + phone.getBrand());
+                    System.out.println("Model HP \t: " + phone.getModel());
+                    System.out.println("Sistem Operasi \t: " + phone.getOs());
+                    System.out.println("Jenis Keyboard \t: " + phone.getKeyboardType());
+                    System.out.println("Jumlah Key  \t: " + phone.getNumOfKeyboardKeys());
+                }
+            }
+        }
+        System.out.println();
+        
+    }
+
 }
 
+/*
+   Main Class
+*/
 public class Main {
     public static void main(String[] args) {
         Toko licioTekno = new Toko("Licio Tekno");
