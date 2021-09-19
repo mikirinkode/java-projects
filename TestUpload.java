@@ -100,9 +100,10 @@ public class Main {
         // meminta menampilkan seluruh hp
         licioTekno.showListHandphone();
         
-        // cek spesifikasi hp no 1 dan 5
-        licioTekno.spesifikasi(1);
+        // cek spesifikasi hp no 5, 2 dan 4
         licioTekno.spesifikasi(5);
+        licioTekno.spesifikasi(2);
+        licioTekno.spesifikasi(4);
         
         // objek handphone baru
         Smartphone geniusX101 = new Smartphone("Genius", "X101", "Android", "SMARTPHONE", "24MP", 'X');
