@@ -5,10 +5,22 @@
  */
 package tugaspraktikum7;
 
-/**
- *
- * @author Lenovo
- */
+class Toko {
+    private String namaToko;
+    private Smartphone merdekaSN205G = new Smartphone("Merdeka", "MN205G", "Android", "SMARTPHONE", "20MP", 'C');
+    private Smartphone merdekaM45 = new Smartphone("Merdeka", "M45", "Android", "SMARTPHONE", "14MP", 'B');
+    private Smartphone oiceSlim3 = new Smartphone("Oice", "Slim 3F", "Android", "SMARTPHONE", "18MP", 'C');
+    private Smartphone oiceGamingX = new Smartphone("Oice", "Gaming X", "Android", "SMARTPHONE", "20MP", 'C');
+    private Symbian nokiaN5X = new Symbian("Nokia", "N5x", "Symbian", "SYMBIAN","Built-in numeric", 20);
+    private Symbian nokiaN95 = new Symbian("Nokia", "N95", "Symbian", "SYMBIAN","Slide-out numeric", 12);
+    private Symbian nokiaThunder = new Symbian("Nokia", "Thunder", "SYMBIAN", "Symbian","Built-in numeric", 18);
+   
+    protected ArrayList<Handphone> listHandphone = new ArrayList<Handphone>();
+    protected ArrayList<Smartphone> listSmartphone = new ArrayList<Smartphone>();
+    protected ArrayList<Symbian> listSymbian = new ArrayList<Symbian>();
+    
+}
+
 public class Main {
     public static void main(String[] args) {
         Toko licioTekno = new Toko("Licio Tekno");
