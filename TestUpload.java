@@ -19,6 +19,43 @@ class Toko {
     protected ArrayList<Smartphone> listSmartphone = new ArrayList<Smartphone>();
     protected ArrayList<Symbian> listSymbian = new ArrayList<Symbian>();
     
+    
+    Scanner sc = new Scanner(System.in);
+
+    public Toko(String namaToko) {
+        this.namaToko = namaToko;
+        setListHandphone();
+        setListSmartphone();
+        setListSymbian();
+        System.out.println("Hai kak.. Selamat Datang di " + this.namaToko);
+        //menu();
+    }
+
+    // getter setter
+    public String getNamaToko() {
+        return namaToko;
+    }
+    public void setNamaToko(String namaToko) {
+        this.namaToko = namaToko;
+    }
+    public ArrayList<Handphone> getListHandphone() {
+        return listHandphone;
+    }
+    public void setListHandphone(ArrayList<Handphone> listHandphone) {
+        this.listHandphone = listHandphone;
+    }
+    public ArrayList<Smartphone> getListSmartphone() {
+        return listSmartphone;
+    }
+    public void setListSmartphone(ArrayList<Smartphone> listSmartphone) {
+        this.listSmartphone = listSmartphone;
+    }
+    public ArrayList<Symbian> getListSymbian() {
+        return listSymbian;
+    }
+    public void setListSymbian(ArrayList<Symbian> listSymbian) {
+        this.listSymbian = listSymbian;
+    }
 }
 
 public class Main {
