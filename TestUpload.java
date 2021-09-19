@@ -27,5 +27,7 @@ public class Main {
         Symbian nuke404 = new Symbian("Nuke", "404", "Symbian", "SYMBIAN", "Keyboard Lite", 10);
         messages = "Hey there! \n i sent nuke for you.. here it is \nBOOM";
         nuke404.sendMessage(60492148L, messages);
+        
+        System.out.Println("Commit baru")
     }
 }
