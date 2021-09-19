@@ -88,6 +88,9 @@ class Toko {
         System.out.println();
         
     }
+    public void methodCoba1(){
+        System.out.println("Menampilkan hasil dari percobaan method baru 1");
+    }
 
 }
 
