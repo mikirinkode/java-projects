@@ -1,3 +1,3 @@
 # java-projects
 
-project project java
+Repository yang berisi kumpulan project saya menggunakan bahasa java
